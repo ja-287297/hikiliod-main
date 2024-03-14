@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About me</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Hi :hi: :troll: </h1>
+  </header>
+
+  <div class="container">
+    <article>
+      <h2>Post Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue non enim elementum cursus.</p>
+    </article>
+    <!-- More articles can be added here -->
+  </div>
+
+  <footer>
+    <audio id="myAudio" loop autoplay>
+      <source src="your_song.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <script>
+      var audio = document.getElementById("myAudio");
+      audio.volume = 0.5; // adjust volume if needed
+    </script>
+    <p>This page was made using AI (I was too lazy to make one 💀)</p>
+    <p><a href="index.html">Main page of my website</a></p>
+  </footer>
+</body>
+</html>
