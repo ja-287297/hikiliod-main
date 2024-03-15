@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dark Mode Modern Blog with Auto Looping Song</title>
+<style>
+  body {
+    background-color: #121212; /* Dark background color */
+    color: #ffffff; /* Text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  header {
+    background-color: #1f1f1f; /* Dark header background color */
+  }
+
+  header h1 {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 2rem;
+  }
+
+  hr {
+    margin: 0;
+    border: none;
+    border-top: 1px solid #383838; /* Separator color */
+  }
+
+  .content-box {
+    background-color: #1f1f1f; /* Darker box background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for modern look */
+  }
+
+  article {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: #ff7f00; /* Heading color */
+  }
+
+  a {
+    color: #ff7f00; /* Link color */
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    background-color: #1f1f1f; /* Dark footer background color */
+    padding: 20px 0;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+  /* Video */
+  .sticky-video {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>My Dark Mode Blog</h1>
+    </div>
+  </header>
+
+  <hr>
+
+  <div class="container">
+    <div class="content-box">
+      <article>
+        <h2>Post Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue non enim elementum cursus.</p>
+      </article>
+      <!-- More articles can be added here -->
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <audio id="myAudio" loop autoplay>
+        <source src="st/cool.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <script>
+        var audio = document.getElementById("myAudio");
+        audio.volume = 0.5; // adjust volume if needed
+      </script>
+      <p>This page was made using AI (I was too lazy to make one 💀)</p>
+      <p>
+        <a href="index.html">
+          <img src="img/sad.png" alt="about me :hi:" style="width: 100px; height: auto;">
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Video -->
+  <div class="sticky-video">
+    <video width="320" height="240" controls>
+      <source src="mis/subere.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</body>
+</html>
