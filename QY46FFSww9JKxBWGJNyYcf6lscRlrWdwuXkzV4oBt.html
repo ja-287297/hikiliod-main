@@ -3,21 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ABOUT ME</title>
-<meta property="og:title" content="JAME">
-<meta property="og:description" content="jame's about me">
-<meta property="og:image" content="img/Sad.png">
-<meta property="og:url" content="https://www.hikiliod.com">
+<title>Dark Mode Modern Blog with Auto Looping Song</title>
+<meta property="og:title" content="My Dark Mode Blog">
+<meta property="og:description" content="Welcome to my Dark Mode Blog!">
+<meta property="og:image" content="img/sad.png">
+<meta property="og:url" content="https://example.com">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="About Jame">
+<meta property="og:site_name" content="My Dark Mode Blog">
 <meta property="og:image:width" content="800">
 <meta property="og:image:height" content="600">
-<meta property="og:image:alt" content="img/Sad.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="JAME">
-<meta name="twitter:description" content="jame's about me">
-<meta name="twitter:image" content="img/Sad.png">
-<meta name="twitter:image:alt" content="img/Sad.png">
+<meta property="og:image:alt" content="Preview Image">
 <style>
   body {
     background-color: #121212; /* Dark background color */
@@ -90,17 +85,17 @@
     right: 20px;
     z-index: 999;
   }
-
+  
   .video-wrap {
     margin-top: 20px;
   }
-
+  
   .video {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%; /* 16:9 aspect ratio (divide 9 by 16 = 0.5625) */
   }
-
+  
   .video iframe {
     position: absolute;
     top: 0;
@@ -127,48 +122,12 @@
     transform: translateY(100%);
     animation: fade-in-up 0.25s ease forwards;
   }
-
-  /* Brainrot mode styles */
-  #brainrot-container {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1000;
-  }
-
-  #brainrot-images {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: zoom-in-out 6s linear infinite alternate;
-  }
-
-  #brainrot-images img {
-    position: absolute;
-  }
-
-  @keyframes zoom-in-out {
-    0% { transform: scale(1); }
-    100% { transform: scale(1.2); }
-  }
-
-  /* Brainrot mode animation trigger */
-  #brainrot-container:checked + .container #brainrot-images {
-    display: block;
-  }
-
 </style>
 </head>
 <body>
-  <input type="checkbox" id="brainrot-container">
   <header>
     <div class="container">
-      <h1>Hewooo</h1>
+      <h1>My Dark Mode Blog</h1>
     </div>
   </header>
 
@@ -177,14 +136,50 @@
   <div class="container">
     <div class="content-box">
       <article>
-        <h2>Welcome</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue non enim elementum cursus.amet, consectetur adipiscing elit. Nulla vel augue non enim elementum cursusamet, consectetur adipiscing elit. Nulla vel augue non enim elementum cursusamet, consectetur adipiscing elit. Nulla vel augue non enim elementum cursusamet, consectetur adipiscing elit. Nulla vel augue non enim elementum cursusamet, consectetur adipiscing elit. Nulla vel augue non enim elementum cursusamet, consectetur adipiscing elit. Nulla vel augue non enim elementum cursusamet, consectetur adipiscing elit. Nulla vel augue non enim elementum cursusamet, consectetur adipiscing elit. Nulla vel augue non enim elementum cursusamet, consectetur adipiscing elit. Nulla vel augue non enim elementum cursus</p>
-        <label for="brainrot-container">Enable Brainrot Mode</label>
-        <div id="brainrot-images">
-          <img src="img/1.jpg" alt="Image 1">
-          <img src="img/2.jpg" alt="Image 2">
-          <img src="img/3.jpg" alt="Image 3">
-          <img src="img/4.jpg" alt="Image 4">
-          <img src="img/7.jpg" alt="Image 7">
-          <img src="img/5.png" alt="Image 5">
-          <img src="img/6.png" alt="Image 6
+        <h2>Post Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue non enim elementum cursus.</p>
+      </article>
+      <!-- More articles can be added here -->
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <audio id="myAudio" loop autoplay>
+        <source src="st/cool.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+      <script>
+        var audio = document.getElementById("myAudio");
+        audio.volume = 0.5; // adjust volume if needed
+      </script>
+      <p>This page was made using AI (I was too lazy to make one 💀)</p>
+      <p>
+        <a href="index.html">
+          <img src="img/sad.png" alt="Main page of my website" style="width: 100px; height: auto;">
+        </a>
+      </p>
+      <!-- Embedded Audio -->
+      <div id="music">
+        <embed src="Anne_Marie - 2002 [Official Video].mp3" autostart=true loop=true>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Video -->
+  <div class="sticky-video">
+    <video width="320" height="240" controls>
+      <source src="mis/Subere.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+  <!-- Embedded YouTube Video -->
+  <div class="container video-wrap">
+    <div class="video">
+      <iframe width="600" height="340" src="https://www.youtube.com/embed/pfqkRYSs4Rg" frameborder="0" gesture="media" allowfullscreen></iframe>
+    </div>
+  </div>
+
+</body>
+</html>
