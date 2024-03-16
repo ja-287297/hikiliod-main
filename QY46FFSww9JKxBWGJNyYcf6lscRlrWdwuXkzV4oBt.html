@@ -127,6 +127,35 @@
     transform: translateY(100%);
     animation: fade-in-up 0.25s ease forwards;
   }
+
+  /* Brainrot mode styles */
+  #brainrot-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+  }
+
+  #brainrot-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #brainrot-images img {
+    position: absolute;
+    animation: zoom-in-out 6s linear infinite alternate;
+  }
+
+  @keyframes zoom-in-out {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.2); }
+  }
 </style>
 </head>
 <body>
@@ -143,51 +172,24 @@
       <article>
         <h2>Welcome</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel augue non enim elementum cursus.amet, consectetur adipiscing elit. Nulla vel augue non enim elementum cursusamet, consectetur adipiscing elit. Nulla vel augue non enim elementum cursusamet, consectetur adipiscing elit. Nulla vel augue non enim elementum cursusamet, consectetur adipiscing elit. Nulla vel augue non enim elementum cursusamet, consectetur adipiscing elit. Nulla vel augue non enim elementum cursusamet, consectetur adipiscing elit. Nulla vel augue non enim elementum cursusamet, consectetur adipiscing elit. Nulla vel augue non enim elementum cursusamet, consectetur adipiscing elit. Nulla vel augue non enim elementum cursusamet, consectetur adipiscing elit. Nulla vel augue non enim elementum cursus</p>
-<hr>
-<h2>About me</h2>
-
+        <button onclick="enableBrainrotMode()">Enable Brainrot Mode</button>
+        <div id="brainrot-container">
+          <div id="brainrot-images">
+            <img src="img/1.jpg" alt="Image 1">
+            <img src="img/2.jpg" alt="Image 2">
+            <img src="img/3.jpg" alt="Image 3">
+            <img src="img/4.jpg" alt="Image 4">
+            <img src="img/7.jpg" alt="Image 7">
+            <img src="img/5.png" alt="Image 5">
+            <img src="img/6.png" alt="Image 6">
+            <img src="img/8.gif" alt="Image 8">
+            <img src="img/9.png" alt="Image 9">
+            <img src="img/10.jpeg" alt="Image 10">
+          </div>
+        </div>
       </article>
       <!-- More articles can be added here -->
     </div>
   </div>
-
-  <footer>
-    <div class="container">
-      <audio id="myAudio" loop autoplay>
-        <source src="st/Cool.ogg" type="audio/ogg">
-        Your browser does not support the audio element.
-      </audio>
-      <script>
-        var audio = document.getElementById("myAudio");
-        audio.volume = 0.5; // adjust volume if needed
-      </script>
-      <p>This page was made using AI (I was too lazy to make one 💀)</p>
-      <p>
-        <a href="index.html">
-          <img src="img/Sad.png" alt="Main page of my website" style="width: 100px; height: auto;">
-        </a>
-      </p>
-      <!-- Embedded Audio -->
-      <div id="music">
-        <embed autoplay loop src="st/Cool.ogg" autostart="true" loop="true">
-      </div>
-    </div>
-  </footer>
-
-  <!-- Video -->
-  <div class="sticky-video">
-    <video width="320" height="240" controls>
-      <source src="mis/Subere.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <!-- Embedded YouTube Video -->
-  <div class="container video-wrap">
-    <div class="video">
-      <iframe width="600" height="340" src="https://www.youtube.com/embed/pfqkRYSs4Rg" frameborder="0" gesture="media" allowfullscreen></iframe>
-    </div>
-  </div>
-
 </body>
 </html>
